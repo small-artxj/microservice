@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bdqn.microserviceitem.dao.ItemMapper">
+
+    <select id="getItemById" resultType="cn.bdqn.microserviceitem.pojo.Item">
+        select * from microservice_item where id = #{id}
+    </select>
+</mapper>
